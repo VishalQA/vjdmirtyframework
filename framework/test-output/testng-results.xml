@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="NegativeTestsSuite" duration-ms="17191" started-at="2020-08-25T20:41:24Z" finished-at="2020-08-25T20:41:42Z">
+  <suite name="NegativeTestsSuite" duration-ms="31885" started-at="2020-08-28T19:04:49Z" finished-at="2020-08-28T19:05:21Z">
     <groups>
     </groups>
-    <test name="NegativeUsernameTest-Firefox" duration-ms="13995" started-at="2020-08-25T20:41:24Z" finished-at="2020-08-25T20:41:38Z">
+    <test name="NegativePasswordTest-Chrome" duration-ms="19090" started-at="2020-08-28T19:04:49Z" finished-at="2020-08-28T19:05:08Z">
       <class name="loginpage.NegativeLoginTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:loginpage.NegativeLoginTest@4fcd19b3]" name="setUp" is-config="true" duration-ms="10292" started-at="2020-08-25T20:41:24Z" finished-at="2020-08-25T20:41:35Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:loginpage.NegativeLoginTest@5fdba6f9]" name="setUp" is-config="true" duration-ms="13486" started-at="2020-08-28T19:04:49Z" finished-at="2020-08-28T19:05:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
@@ -23,89 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="negativeTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:loginpage.NegativeLoginTest@4fcd19b3]" name="negativeTest" duration-ms="3684" started-at="2020-08-25T20:41:35Z" finished-at="2020-08-25T20:41:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[incorrectUsername]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SuperSecretPassword!]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Your username is invalid!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- negativeTest -->
-      </class> <!-- loginpage.NegativeLoginTest -->
-    </test> <!-- NegativeUsernameTest-Firefox -->
-    <test name="NegativePasswordTest-Firefox" duration-ms="13997" started-at="2020-08-25T20:41:24Z" finished-at="2020-08-25T20:41:38Z">
-      <class name="loginpage.NegativeLoginTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:loginpage.NegativeLoginTest@3b94d659]" name="setUp" is-config="true" duration-ms="10655" started-at="2020-08-25T20:41:24Z" finished-at="2020-08-25T20:41:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@17695df3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="negativeTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:loginpage.NegativeLoginTest@3b94d659]" name="negativeTest" duration-ms="3327" started-at="2020-08-25T20:41:35Z" finished-at="2020-08-25T20:41:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tomsmith]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[incorrectPassword]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Your password is invalid!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- negativeTest -->
-      </class> <!-- loginpage.NegativeLoginTest -->
-    </test> <!-- NegativePasswordTest-Firefox -->
-    <test name="NegativePasswordTest-Chrome" duration-ms="17053" started-at="2020-08-25T20:41:24Z" finished-at="2020-08-25T20:41:41Z">
-      <class name="loginpage.NegativeLoginTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:loginpage.NegativeLoginTest@5fdba6f9]" name="setUp" is-config="true" duration-ms="13795" started-at="2020-08-25T20:41:24Z" finished-at="2020-08-25T20:41:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@6c9f5c0d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="negativeTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:loginpage.NegativeLoginTest@5fdba6f9]" name="negativeTest" duration-ms="3243" started-at="2020-08-25T20:41:38Z" finished-at="2020-08-25T20:41:41Z">
+        <test-method status="PASS" signature="negativeTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:loginpage.NegativeLoginTest@5fdba6f9]" name="negativeTest" duration-ms="5580" started-at="2020-08-28T19:05:03Z" finished-at="2020-08-28T19:05:08Z">
           <params>
             <param index="0">
               <value>
@@ -128,9 +46,9 @@
         </test-method> <!-- negativeTest -->
       </class> <!-- loginpage.NegativeLoginTest -->
     </test> <!-- NegativePasswordTest-Chrome -->
-    <test name="NegativeUsernameTest-Chrome" duration-ms="17191" started-at="2020-08-25T20:41:24Z" finished-at="2020-08-25T20:41:42Z">
+    <test name="NegativeUsernameTest-Chrome" duration-ms="20339" started-at="2020-08-28T19:04:49Z" finished-at="2020-08-28T19:05:09Z">
       <class name="loginpage.NegativeLoginTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:loginpage.NegativeLoginTest@4524411f]" name="setUp" is-config="true" duration-ms="13768" started-at="2020-08-25T20:41:24Z" finished-at="2020-08-25T20:41:38Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:loginpage.NegativeLoginTest@4524411f]" name="setUp" is-config="true" duration-ms="13390" started-at="2020-08-28T19:04:49Z" finished-at="2020-08-28T19:05:02Z">
           <params>
             <param index="0">
               <value>
@@ -139,14 +57,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@de3a06f]]>
+                <![CDATA[org.testng.TestRunner@17695df3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="negativeTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:loginpage.NegativeLoginTest@4524411f]" name="negativeTest" duration-ms="3408" started-at="2020-08-25T20:41:38Z" finished-at="2020-08-25T20:41:42Z">
+        <test-method status="PASS" signature="negativeTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:loginpage.NegativeLoginTest@4524411f]" name="negativeTest" duration-ms="6928" started-at="2020-08-28T19:05:02Z" finished-at="2020-08-28T19:05:09Z">
           <params>
             <param index="0">
               <value>
@@ -169,5 +87,87 @@
         </test-method> <!-- negativeTest -->
       </class> <!-- loginpage.NegativeLoginTest -->
     </test> <!-- NegativeUsernameTest-Chrome -->
+    <test name="NegativePasswordTest-Firefox" duration-ms="31863" started-at="2020-08-28T19:04:49Z" finished-at="2020-08-28T19:05:21Z">
+      <class name="loginpage.NegativeLoginTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:loginpage.NegativeLoginTest@3b94d659]" name="setUp" is-config="true" duration-ms="27886" started-at="2020-08-28T19:04:49Z" finished-at="2020-08-28T19:05:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6c9f5c0d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="negativeTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:loginpage.NegativeLoginTest@3b94d659]" name="negativeTest" duration-ms="3955" started-at="2020-08-28T19:05:17Z" finished-at="2020-08-28T19:05:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[incorrectPassword]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your password is invalid!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeTest -->
+      </class> <!-- loginpage.NegativeLoginTest -->
+    </test> <!-- NegativePasswordTest-Firefox -->
+    <test name="NegativeUsernameTest-Firefox" duration-ms="31885" started-at="2020-08-28T19:04:49Z" finished-at="2020-08-28T19:05:21Z">
+      <class name="loginpage.NegativeLoginTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:loginpage.NegativeLoginTest@4fcd19b3]" name="setUp" is-config="true" duration-ms="27886" started-at="2020-08-28T19:04:49Z" finished-at="2020-08-28T19:05:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@de3a06f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="negativeTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:loginpage.NegativeLoginTest@4fcd19b3]" name="negativeTest" duration-ms="3978" started-at="2020-08-28T19:05:17Z" finished-at="2020-08-28T19:05:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[incorrectUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your username is invalid!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeTest -->
+      </class> <!-- loginpage.NegativeLoginTest -->
+    </test> <!-- NegativeUsernameTest-Firefox -->
   </suite> <!-- NegativeTestsSuite -->
 </testng-results>
