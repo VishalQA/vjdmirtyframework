@@ -1,24 +1,30 @@
 package pages;
 
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class WelcomePageObject {
+public class WelcomePageObject extends BasePage{
 
-	private WebDriver driver;
-    private Logger log;
+
 	private String url = "http://the-internet.herokuapp.com/";
 	
+	private By formlinklocator = By.linkText("Form Authentication");
+	
 	public WelcomePageObject(WebDriver driver , Logger log) {
-		// TODO Auto-generated constructor stub
-		this.driver = driver;
-		this.log = log;
+ 
+		super(driver , log);
 		
 	}
 	public void openpage() {
 		log.info("opening page ==>" + url);
-		driver.get(url);
+	    openurl(url);
 		log.info("Page opened");
 	}
 
+	public LoginPage clickformlinklocator() {
+		log.info("Click on form autenticator link");
+	    click(formlinklocator);
+		return new LoginPage(driver ,log);
+	}
 }

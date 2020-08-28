@@ -6,6 +6,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import base.TestUtilities;
+import pages.LoginPage;
+import pages.WelcomePageObject;
 
 public class NegativeLoginTest extends TestUtilities {
 	
@@ -16,30 +18,28 @@ public class NegativeLoginTest extends TestUtilities {
 		log.info("Starting negativeTest");
 
 		// open main page
-		String url = "http://the-internet.herokuapp.com/";
-		driver.get(url);
-		log.info("Main page is opened.");
+		WelcomePageObject welcomepage = new WelcomePageObject(driver , log);
+		welcomepage.openpage();
 
 		// Click on Form Authentication link
-		driver.findElement(By.linkText("Form Authentication")).click();
-
+	    LoginPage loginpage = welcomepage.clickformlinklocator();
+	    		
+	    		
 		// enter username and password
-		driver.findElement(By.id("username")).sendKeys(username);
-		driver.findElement(By.id("password")).sendKeys(password);
-
-		// push log in button
-		driver.findElement(By.className("radius")).click();
-
-		// Verification
-		String actualErrorMessage = driver.findElement(By.id("flash")).getText();
-		Assert.assertTrue(actualErrorMessage.contains(expectedErrorMessage),
-				"actualErrorMessage does not contain expectedErrorMessage\nexpectedErrorMessage: "
-						+ expectedErrorMessage + "\nactualErrorMessage: " + actualErrorMessage);
-	}
+		loginpage.login(username, password);
+		
+//		loginpage.
+//
+//		// Verification
+//		String actualErrorMessage = driver.findElement(By.id("flash")).getText();
+//		Assert.assertTrue(actualErrorMessage.contains(expectedErrorMessage),
+//				"actualErrorMessage does not contain expectedErrorMessage\nexpectedErrorMessage: "
+//						+ expectedErrorMessage + "\nactualErrorMessage: " + actualErrorMessage);
+//	}
 
 
 	
 }
-	
+}
 
 
